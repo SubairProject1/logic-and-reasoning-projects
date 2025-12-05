@@ -1,0 +1,19 @@
+c Pigeonhole problem: 3 pigeons, 2 holes
+c Let p_nh be the n-th pigeon at hole h, meaning 11 is pigeon 1 at hole 1
+p cnf 32 12
+c Each pigeon is in at least one hole:
+11 12 0
+21 22 0
+31 32 0
+c Each pigeon is in at most one hole:
+-11 -12 0
+-21 -22 0
+-31 -32 0
+c No hole contains more than one pigeon (hole 1):
+-11 -21 0
+-11 -31 0
+-21 -31 0
+c No hole contains more than one pigeon (hole 2):
+-12 -22 0
+-12 -32 0
+-22 -32 0
