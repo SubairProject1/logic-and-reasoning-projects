@@ -1,0 +1,45 @@
+%--- Axioms for "gt" (>)
+
+%--- Transitivity
+fof(gt_transitive, axiom,
+    ! [X, Y, Z] : ((gt(X, Y) & gt(Y, Z)) => gt(X, Z))).
+
+%--- Anti-Symmetry
+fof(gt_antisymmetric, axiom,
+    ! [X, Y] : (gt(X, Y) => ~gt(Y, X))).
+
+%--- Irreflexivity
+fof(gt_irreflexive, axiom,
+    ! [X] : ~gt(X, X)).
+
+%--- Definition of "ge" (≥)
+
+%--- ge(X, Y) <=> gt(X, Y) or X = Y
+fof(ge_definition, axiom,
+    ! [X, Y] : (ge(X, Y) <=> (gt(X, Y) | X = Y))).
+
+%--- Definition of functions f and g
+%--- Monotonicity of f
+fof(f_monotonic, axiom,
+    ! [X, Y] : (ge(X, Y) => ge(f(X), f(Y)))).
+
+%--- f(X) ≥ X
+fof(f_geX, axiom,
+    ! [X] : ge(f(X), X)).
+
+%--- Monotonicity of g
+fof(g_monotonic, axiom,
+    ! [X, Y] : (ge(X, Y) => ge(g(X), g(Y)))).
+
+%--- g(X) ≥ X
+fof(g_geX, axiom,
+    ! [X] : ge(g(X), X)).
+
+%--- Definition of h
+fof(h_definition, axiom,
+    ! [X] : h(X) = f(g(X))).
+
+%--- Conjecture: h is monotonic and h(X) ≥ X
+fof(h_monotonic_and_geX, conjecture,
+    (! [X, Y] : (ge(X, Y) => ge(h(X), h(Y)))) & (! [X] : ge(h(X), X))).
+

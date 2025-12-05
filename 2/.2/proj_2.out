@@ -1,0 +1,295 @@
+% Checking upload ... % Checker ran ... % No errors ...
+% START OF SYSTEM OUTPUT
+Running first-order theorem proving
+Running: /home/tptp/Systems/Vampire---4.9/vampire --mode casc -m 16384 --cores 7 -t 60 /tmp/QoJXSV_v9I/SOT_rMXyrG
+% (2292924)Running in auto input_syntax mode. Trying TPTP
+% (2292924)Running in auto input_syntax mode. Trying TPTP
+% (2292924)Running in auto input_syntax mode. Trying TPTP
+% (2292924)Running in auto input_syntax mode. Trying TPTP
+% (2292924)Running in auto input_syntax mode. Trying TPTP
+% (2292924)Running in auto input_syntax mode. Trying TPTP
+% (2292924)Running in auto input_syntax mode. Trying TPTP
+WARNING Broken Constraint: if demodulation_redundancy_check(ordering) has been set then forward_demodulation(off) is not equal to off or backward_demodulation(off) is not equal to off
+% (2292935)lrs+1010_1:1_drc=ordering:to=lpo:sil=2000:sos=on:fd=off:i=117:bd=off_0 on SOT_rMXyrG for (1ds/117Mi)
+% (2292931)dis+1011_1:99_drc=ordering:anc=none:fde=unused:plsqc=2:bsd=on:plsq=on:plsqr=109,504:sp=reverse_frequency:spb=intro:rp=on:alpa=random:s2a=on:i=257151:s2at=-1.0:aac=none:nm=16:rawr=on:sil=256000:acc=model_0 on SOT_rMXyrG for (599ds/257151Mi)
+
+% (2292935)Refutation not found, incomplete strategy% (2292935)------------------------------
+% (2292935)Version: Vampire 4.9 (Release build, commit c4b2bca23 on 2025-03-14 15:27:07 +0100)
+% (2292935)Linked with Z3 4.14.0.0 3c47fd96cf5645d0c42b2c819d9e9a84380aa721 z3-4.8.4-9178-g3c47fd96c
+% (2292935)Termination reason: Refutation not found, incomplete strategy
+
+% (2292935)Time elapsed: 0.001 s
+% (2292935)Peak memory usage: 11 MB
+% (2292934)ott-1011_16:1_drc=ordering:sil=2000:sp=const_max:urr=on:lsd=20:st=3.0:i=117:ss=axioms:gsp=on:rp=on:sos=on:fd=off:aac=none_0 on SOT_rMXyrG for (1ds/117Mi)
+% (2292930)lrs+1011_8:1_drc=ordering:sil=128000:tgt=ground:fde=unused:sp=frequency:nwc=5.0:lwlo=on:i=105338:av=off_0 on SOT_rMXyrG for (527ds/105338Mi)
+% (2292929)ott+4_40_drc=ordering:av=off:bce=on:fsd=off:fde=unused:nm=4:nwc=1.1:sos=all:sp=frequency:i=69040_0 on SOT_rMXyrG for (346ds/69040Mi)
+Permission deniedPermission denied
+Permission deniedPermission denied
+
+% (2292935)------------------------------
+% (2292935)------------------------------
+% (2292924)Running in auto input_syntax mode. Trying TPTP
+% (2292933)Refutation not found, incomplete strategy% (2292933)------------------------------
+% (2292933)Version: Vampire 4.9 (Release build, commit c4b2bca23 on 2025-03-14 15:27:07 +0100)
+% (2292933)Linked with Z3 4.14.0.0 3c47fd96cf5645d0c42b2c819d9e9a84380aa721 z3-4.8.4-9178-g3c47fd96c
+% (2292933)Termination reason: Refutation not found, incomplete strategy
+
+% (2292933)Time elapsed: 0.001 s
+% (2292933)Peak memory usage: 11 MB
+% (2292932)lrs+21_2461:262144_anc=none:drc=off:sil=2000:sp=occurrence:nwc=6.0:updr=off:st=3.0:i=109:sd=2:afp=4000:erml=3:nm=14:afq=2.0:uhcvi=on:ss=included:er=filter:abs=on:nicw=on:ile=on:sims=off:s2a=on:s2agt=50:s2at=-1.0:plsq=on:plsql=on:plsqc=2:plsqr=1,32:newcnf=on:bd=off:to=lpo_0 on SOT_rMXyrG for (1ds/109Mi)
+% (2292933)------------------------------
+% (2292933)------------------------------
+% (2292924)Running in auto input_syntax mode. Trying TPTP
+% (2292931)First to succeed.
+% (2292931)Solution written to "/tmp/tmp.16P1CqPwp1/vampire-proof-2292924"
+% (2292924)Running in auto input_syntax mode. Trying TPTP
+% (2292931)Refutation found. Thanks to Tanya!
+% SZS status Theorem for SOT_rMXyrG
+% SZS output start Proof for SOT_rMXyrG
+fof(f258,plain,(
+  $false),
+  inference(avatar_sat_refutation,[],[f53,f57,f131,f141,f148,f225,f229,f253])).
+fof(f253,plain,(
+  ~spl3_2 | ~spl3_6),
+  inference(avatar_contradiction_clause,[],[f252])).
+fof(f252,plain,(
+  $false | (~spl3_2 | ~spl3_6)),
+  inference(subsumption_resolution,[],[f238,f52])).
+fof(f52,plain,(
+  ge(h(sK0),sK0) | ~spl3_2),
+  inference(avatar_component_clause,[],[f51])).
+fof(f51,plain,(
+  spl3_2 <=> ge(h(sK0),sK0)),
+  introduced(avatar_definition,[new_symbols(naming,[spl3_2])])).
+fof(f238,plain,(
+  ~ge(h(sK0),sK0) | ~spl3_6),
+  inference(superposition,[],[f61,f147])).
+fof(f147,plain,(
+  sK0 = g(sK0) | ~spl3_6),
+  inference(avatar_component_clause,[],[f146])).
+fof(f146,plain,(
+  spl3_6 <=> sK0 = g(sK0)),
+  introduced(avatar_definition,[new_symbols(naming,[spl3_6])])).
+fof(f61,plain,(
+  ( ! [X0] : (~ge(h(X0),g(X0))) )),
+  inference(superposition,[],[f40,f29])).
+fof(f29,plain,(
+  ( ! [X0] : (h(X0) = f(g(X0))) )),
+  inference(cnf_transformation,[],[f9])).
+fof(f9,axiom,(
+  ! [X0] : h(X0) = f(g(X0))),
+  file('/tmp/QoJXSV_v9I/SOT_rMXyrG',unknown)).
+fof(f40,plain,(
+  ( ! [X0] : (~ge(f(X0),X0)) )),
+  inference(consistent_polarity_flipping,[],[f27])).
+fof(f27,plain,(
+  ( ! [X0] : (ge(f(X0),X0)) )),
+  inference(cnf_transformation,[],[f6])).
+fof(f6,axiom,(
+  ! [X0] : ge(f(X0),X0)),
+  file('/tmp/QoJXSV_v9I/SOT_rMXyrG',unknown)).
+fof(f229,plain,(
+  spl3_1 | ~spl3_16),
+  inference(avatar_contradiction_clause,[],[f228])).
+fof(f228,plain,(
+  $false | (spl3_1 | ~spl3_16)),
+  inference(subsumption_resolution,[],[f226,f49])).
+fof(f49,plain,(
+  ~ge(sK1,sK2) | spl3_1),
+  inference(avatar_component_clause,[],[f48])).
+fof(f48,plain,(
+  spl3_1 <=> ge(sK1,sK2)),
+  introduced(avatar_definition,[new_symbols(naming,[spl3_1])])).
+fof(f226,plain,(
+  ge(sK1,sK2) | ~spl3_16),
+  inference(resolution,[],[f224,f43])).
+fof(f43,plain,(
+  ( ! [X0,X1] : (~ge(g(X0),g(X1)) | ge(X0,X1)) )),
+  inference(consistent_polarity_flipping,[],[f32])).
+fof(f32,plain,(
+  ( ! [X0,X1] : (ge(g(X0),g(X1)) | ~ge(X0,X1)) )),
+  inference(cnf_transformation,[],[f16])).
+fof(f16,plain,(
+  ! [X0,X1] : (ge(g(X0),g(X1)) | ~ge(X0,X1))),
+  inference(ennf_transformation,[],[f7])).
+fof(f7,axiom,(
+  ! [X0,X1] : (ge(X0,X1) => ge(g(X0),g(X1)))),
+  file('/tmp/QoJXSV_v9I/SOT_rMXyrG',unknown)).
+fof(f224,plain,(
+  ge(g(sK1),g(sK2)) | ~spl3_16),
+  inference(avatar_component_clause,[],[f223])).
+fof(f223,plain,(
+  spl3_16 <=> ge(g(sK1),g(sK2))),
+  introduced(avatar_definition,[new_symbols(naming,[spl3_16])])).
+fof(f225,plain,(
+  spl3_16 | ~spl3_3),
+  inference(avatar_split_clause,[],[f220,f55,f223])).
+fof(f55,plain,(
+  spl3_3 <=> ge(h(sK1),h(sK2))),
+  introduced(avatar_definition,[new_symbols(naming,[spl3_3])])).
+fof(f220,plain,(
+  ge(g(sK1),g(sK2)) | ~spl3_3),
+  inference(resolution,[],[f105,f56])).
+fof(f56,plain,(
+  ge(h(sK1),h(sK2)) | ~spl3_3),
+  inference(avatar_component_clause,[],[f55])).
+fof(f105,plain,(
+  ( ! [X0,X1] : (~ge(h(X1),h(X0)) | ge(g(X1),g(X0))) )),
+  inference(superposition,[],[f64,f29])).
+fof(f64,plain,(
+  ( ! [X0,X1] : (~ge(h(X0),f(X1)) | ge(g(X0),X1)) )),
+  inference(superposition,[],[f42,f29])).
+fof(f42,plain,(
+  ( ! [X0,X1] : (~ge(f(X0),f(X1)) | ge(X0,X1)) )),
+  inference(consistent_polarity_flipping,[],[f31])).
+fof(f31,plain,(
+  ( ! [X0,X1] : (ge(f(X0),f(X1)) | ~ge(X0,X1)) )),
+  inference(cnf_transformation,[],[f15])).
+fof(f15,plain,(
+  ! [X0,X1] : (ge(f(X0),f(X1)) | ~ge(X0,X1))),
+  inference(ennf_transformation,[],[f5])).
+fof(f5,axiom,(
+  ! [X0,X1] : (ge(X0,X1) => ge(f(X0),f(X1)))),
+  file('/tmp/QoJXSV_v9I/SOT_rMXyrG',unknown)).
+fof(f148,plain,(
+  spl3_6 | spl3_4),
+  inference(avatar_split_clause,[],[f143,f126,f146])).
+fof(f126,plain,(
+  spl3_4 <=> gt(g(sK0),sK0)),
+  introduced(avatar_definition,[new_symbols(naming,[spl3_4])])).
+fof(f143,plain,(
+  sK0 = g(sK0) | spl3_4),
+  inference(resolution,[],[f127,f60])).
+fof(f60,plain,(
+  ( ! [X0] : (gt(g(X0),X0) | g(X0) = X0) )),
+  inference(resolution,[],[f41,f46])).
+fof(f46,plain,(
+  ( ! [X0,X1] : (ge(X0,X1) | gt(X0,X1) | X0 = X1) )),
+  inference(consistent_polarity_flipping,[],[f33])).
+fof(f33,plain,(
+  ( ! [X0,X1] : (X0 = X1 | gt(X0,X1) | ~ge(X0,X1)) )),
+  inference(cnf_transformation,[],[f23])).
+fof(f23,plain,(
+  ! [X0,X1] : ((ge(X0,X1) | (X0 != X1 & ~gt(X0,X1))) & (X0 = X1 | gt(X0,X1) | ~ge(X0,X1)))),
+  inference(flattening,[],[f22])).
+fof(f22,plain,(
+  ! [X0,X1] : ((ge(X0,X1) | (X0 != X1 & ~gt(X0,X1))) & ((X0 = X1 | gt(X0,X1)) | ~ge(X0,X1)))),
+  inference(nnf_transformation,[],[f4])).
+fof(f4,axiom,(
+  ! [X0,X1] : (ge(X0,X1) <=> (X0 = X1 | gt(X0,X1)))),
+  file('/tmp/QoJXSV_v9I/SOT_rMXyrG',unknown)).
+fof(f41,plain,(
+  ( ! [X0] : (~ge(g(X0),X0)) )),
+  inference(consistent_polarity_flipping,[],[f28])).
+fof(f28,plain,(
+  ( ! [X0] : (ge(g(X0),X0)) )),
+  inference(cnf_transformation,[],[f8])).
+fof(f8,axiom,(
+  ! [X0] : ge(g(X0),X0)),
+  file('/tmp/QoJXSV_v9I/SOT_rMXyrG',unknown)).
+fof(f127,plain,(
+  ~gt(g(sK0),sK0) | spl3_4),
+  inference(avatar_component_clause,[],[f126])).
+fof(f141,plain,(
+  ~spl3_2 | ~spl3_5),
+  inference(avatar_contradiction_clause,[],[f140])).
+fof(f140,plain,(
+  $false | (~spl3_2 | ~spl3_5)),
+  inference(subsumption_resolution,[],[f133,f41])).
+fof(f133,plain,(
+  ge(g(sK0),sK0) | (~spl3_2 | ~spl3_5)),
+  inference(backward_demodulation,[],[f52,f130])).
+fof(f130,plain,(
+  h(sK0) = g(sK0) | ~spl3_5),
+  inference(avatar_component_clause,[],[f129])).
+fof(f129,plain,(
+  spl3_5 <=> h(sK0) = g(sK0)),
+  introduced(avatar_definition,[new_symbols(naming,[spl3_5])])).
+fof(f131,plain,(
+  ~spl3_4 | spl3_5 | ~spl3_2),
+  inference(avatar_split_clause,[],[f121,f51,f129,f126])).
+fof(f121,plain,(
+  h(sK0) = g(sK0) | ~gt(g(sK0),sK0) | ~spl3_2),
+  inference(resolution,[],[f62,f116])).
+fof(f116,plain,(
+  ( ! [X0] : (~gt(h(sK0),X0) | ~gt(X0,sK0)) ) | ~spl3_2),
+  inference(resolution,[],[f101,f52])).
+fof(f101,plain,(
+  ( ! [X2,X0,X1] : (~ge(X2,X1) | ~gt(X2,X0) | ~gt(X0,X1)) )),
+  inference(resolution,[],[f36,f45])).
+fof(f45,plain,(
+  ( ! [X0,X1] : (~gt(X0,X1) | ~ge(X0,X1)) )),
+  inference(consistent_polarity_flipping,[],[f34])).
+fof(f34,plain,(
+  ( ! [X0,X1] : (ge(X0,X1) | ~gt(X0,X1)) )),
+  inference(cnf_transformation,[],[f23])).
+fof(f36,plain,(
+  ( ! [X2,X0,X1] : (gt(X0,X2) | ~gt(X1,X2) | ~gt(X0,X1)) )),
+  inference(cnf_transformation,[],[f18])).
+fof(f18,plain,(
+  ! [X0,X1,X2] : (gt(X0,X2) | ~gt(X1,X2) | ~gt(X0,X1))),
+  inference(flattening,[],[f17])).
+fof(f17,plain,(
+  ! [X0,X1,X2] : (gt(X0,X2) | (~gt(X1,X2) | ~gt(X0,X1)))),
+  inference(ennf_transformation,[],[f1])).
+fof(f1,axiom,(
+  ! [X0,X1,X2] : ((gt(X1,X2) & gt(X0,X1)) => gt(X0,X2))),
+  file('/tmp/QoJXSV_v9I/SOT_rMXyrG',unknown)).
+fof(f62,plain,(
+  ( ! [X0] : (gt(h(X0),g(X0)) | g(X0) = h(X0)) )),
+  inference(resolution,[],[f61,f46])).
+fof(f57,plain,(
+  spl3_3 | spl3_2),
+  inference(avatar_split_clause,[],[f38,f51,f55])).
+fof(f38,plain,(
+  ge(h(sK0),sK0) | ge(h(sK1),h(sK2))),
+  inference(consistent_polarity_flipping,[],[f25])).
+fof(f25,plain,(
+  ~ge(h(sK0),sK0) | ~ge(h(sK1),h(sK2))),
+  inference(cnf_transformation,[],[f21])).
+fof(f21,plain,(
+  ~ge(h(sK0),sK0) | (~ge(h(sK1),h(sK2)) & ge(sK1,sK2))),
+  inference(skolemisation,[status(esa),new_symbols(skolem,[sK0,sK1,sK2])],[f13,f20,f19])).
+fof(f19,plain,(
+  ? [X0] : ~ge(h(X0),X0) => ~ge(h(sK0),sK0)),
+  introduced(choice_axiom,[])).
+fof(f20,plain,(
+  ? [X1,X2] : (~ge(h(X1),h(X2)) & ge(X1,X2)) => (~ge(h(sK1),h(sK2)) & ge(sK1,sK2))),
+  introduced(choice_axiom,[])).
+fof(f13,plain,(
+  ? [X0] : ~ge(h(X0),X0) | ? [X1,X2] : (~ge(h(X1),h(X2)) & ge(X1,X2))),
+  inference(ennf_transformation,[],[f12])).
+fof(f12,plain,(
+  ~(! [X0] : ge(h(X0),X0) & ! [X1,X2] : (ge(X1,X2) => ge(h(X1),h(X2))))),
+  inference(rectify,[],[f11])).
+fof(f11,negated_conjecture,(
+  ~(! [X0] : ge(h(X0),X0) & ! [X0,X1] : (ge(X0,X1) => ge(h(X0),h(X1))))),
+  inference(negated_conjecture,[],[f10])).
+fof(f10,conjecture,(
+  ! [X0] : ge(h(X0),X0) & ! [X0,X1] : (ge(X0,X1) => ge(h(X0),h(X1)))),
+  file('/tmp/QoJXSV_v9I/SOT_rMXyrG',unknown)).
+fof(f53,plain,(
+  ~spl3_1 | spl3_2),
+  inference(avatar_split_clause,[],[f39,f51,f48])).
+fof(f39,plain,(
+  ge(h(sK0),sK0) | ~ge(sK1,sK2)),
+  inference(consistent_polarity_flipping,[],[f24])).
+fof(f24,plain,(
+  ~ge(h(sK0),sK0) | ge(sK1,sK2)),
+  inference(cnf_transformation,[],[f21])).
+% SZS output end Proof for SOT_rMXyrG
+% (2292931)------------------------------
+% (2292931)Version: Vampire 4.9 (Release build, commit c4b2bca23 on 2025-03-14 15:27:07 +0100)
+% (2292931)Linked with Z3 4.14.0.0 3c47fd96cf5645d0c42b2c819d9e9a84380aa721 z3-4.8.4-9178-g3c47fd96c
+% (2292931)Termination reason: Refutation
+
+% (2292931)Time elapsed: 0.008 s
+% (2292931)Peak memory usage: 12 MB
+% (2292931)------------------------------
+% (2292931)------------------------------
+% (2292924)Success in time 0.064 s
+% Vampire exiting
+
+% END OF SYSTEM OUTPUT
+% RESULT: SOT_rMXyrG - Vampire---4.9 says Theorem - CPU = 0.01 WC = 0.08 
+% OUTPUT: SOT_rMXyrG - Vampire---4.9 says Refutation - CPU = 0.01 WC = 0.10
