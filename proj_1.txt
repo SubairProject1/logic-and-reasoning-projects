@@ -1,5 +1,0 @@
-As expected the result was UNSAT, meaning there is no interpretation that can make it true.
-It is NOT possible to assign 3 pigeons to 2 holes so that every pigeon occupies some hole
-and no hole contains more than one pigeon. The SAT solver executed in just 0.28 seconds, 
-demonstrating high efficiency. It processed 32 variables and 12 clauses, with 2 conflicts 
-and 1 learned unit clause during its operation.
