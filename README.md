@@ -1,6 +1,6 @@
 # Logic and Reasoning in Computer Science – Project Work
 
-This repository contains independently completed project assignments for the course Logic and Reasoning in Computer Science. The projects involve SAT solving, SMT solving, and first-order logic encodings using DIMACS CNF, TPTP, Python, and SMT-LIB2.
+This repository contains independently completed project assignments for the course Logic and Reasoning in Computer Science. The projects involve SAT solving, SMT solving, and first-order logic encodings using DIMACS CNF, TPTP, Python, and SMT-LIB2. Assignment description can be found at the very end of the uploaded pdf files.
 
 ## Project Problem 1.1 – Pigeonhole Principle (SAT Encoding)
 
