@@ -1,0 +1,27 @@
+%---- Left identity: e * x = x
+fof(left_identity, axiom,
+    ! [X] : mult(e, X) = X).
+
+%---- Left inverse: inverse(x) * x = e
+fof(left_inverse, axiom,
+    ! [X] : mult(inverse(X), X) = e).
+
+%---- Associativity: (x * y) * z = x * (y * z)
+fof(associativity, axiom,
+    ! [X, Y, Z] : mult(mult(X, Y), Z) = mult(X, mult(Y, Z))).
+
+%---- Group of order 2: x * x = e for all x
+fof(groupoforder2, hypothesis,
+    ! [X] : mult(X, X) = e).
+
+%---- Conjecture:
+%---- Prove right identity: x * e = x
+%---- Prove uniqueness of the neutral element: any element behaving like a right or left identity must be e
+fof(right_identity_and_unique, conjecture,
+    (
+        (! [X] : (mult(X, e) = X))  % Right identity
+        &
+        (! [X] : (mult(X, e2) = X) => (e = e2))  % If e2 is a right identity, then e = e2
+        &
+        (! [X] : (mult(e3, X) = X) => (e = e3))  % If e3 is a left identity, then e = e3
+    )).

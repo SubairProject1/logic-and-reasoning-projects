@@ -1,0 +1,215 @@
+% Checking upload ... % Checker ran ... % No errors ...
+% START OF SYSTEM OUTPUT
+Running first-order theorem proving
+Running: /home/tptp/Systems/Vampire---4.9/vampire --mode casc -m 16384 --cores 7 -t 60 /tmp/2Mx1AZsuS4/SOT_qdW831
+% (2293026)Running in auto input_syntax mode. Trying TPTP
+% (2293026)Running in auto input_syntax mode. Trying TPTP
+% (2293026)Running in auto input_syntax mode. Trying TPTP
+% (2293026)Running in auto input_syntax mode. Trying TPTP
+% (2293026)Running in auto input_syntax mode. Trying TPTP
+% (2293026)Running in auto input_syntax mode. Trying TPTP
+% (2293026)Running in auto input_syntax mode. Trying TPTP
+% (2293031)lrs-1011_16:31_bsr=on:tgt=full:sp=unary_first:acc=on:updr=off:nicw=on:i=134284:sil=256000:si=on:rtra=on:to=lpo:spb=goal_then_units:nwc=5.23:urr=on:lwlo=on:fdi=20:fsd=on_0 on SOT_qdW831 for (599ds/134284Mi)
+% (2293036)lrs+1011_1:1_drc=ordering:sil=32000:rnwc=on:nwc=10.0:lwlo=on:i=107:bd=off:av=off_0 on SOT_qdW831 for (1ds/107Mi)
+
+WARNING Broken Constraint: if demodulation_redundancy_check(ordering) has been set then forward_demodulation(off) is not equal to off or backward_demodulation(off) is not equal to off
+% (2293034)dis+1011_1:1_drc=ordering:to=lpo:sil=4000:sp=const_max:sos=all:spb=goal:st=1.5:i=103:av=off:ss=axioms:sfv=off:bd=off:sd=2:fd=off_0 on SOT_qdW831 for (1ds/103Mi)
+% (2293033)lrs+1010_2201:262144_anc=all:sil=256000:sims=off:sp=frequency:spb=goal_then_units:rp=on:lwlo=on:st=3.0:i=231451:bs=unit_only:nm=6:ins=2:fsd=on:ss=axioms:sgt=16:afr=on:tgt=ground:acc=on:ccuc=first_0 on SOT_qdW831 for (599ds/231451Mi)
+% (2293037)lrs-1011_4:7_drc=ordering:sil=2000:tgt=full:bsd=on:spb=goal:nwc=5.0:updr=off:newcnf=on:i=121:kws=arity_squared:rawr=on:bsdmm=2_0 on SOT_qdW831 for (1ds/121Mi)
+
+% (2293031)First to succeed.
+% (2293031)Solution written to "/tmp/tmp.9iWc58IGw6/vampire-proof-2293026"
+% (2293037)Also succeeded, but the first one will report.
+% (2293033)Also succeeded, but the first one will report.
+WARNING Broken Constraint: if demodulation_redundancy_check(ordering) has been set then forward_demodulation(off) is not equal to off or backward_demodulation(off) is not equal to off
+% (2293035)dis-1002_1:2_drc=ordering:sil=4000:i=110:nm=2:ins=3:bd=off:fsr=off:rp=on:to=lpo:nwc=5.0:fd=off:sfv=off:fs=off_0 on SOT_qdW831 for (1ds/110Mi)
+% (2293032)ott+1011_1:3_sil=256000:bsd=on:sp=occurrence:sos=on:newcnf=on:i=214065:afp=1:aac=none:amm=off:afq=3.64962_0 on SOT_qdW831 for (599ds/214065Mi)
+
+% (2293026)Running in auto input_syntax mode. Trying TPTP
+% (2293031)Refutation found. Thanks to Tanya!
+% SZS status Theorem for SOT_qdW831
+% SZS output start Proof for SOT_qdW831
+fof(f131,plain,(
+  $false),
+  inference(avatar_sat_refutation,[],[f33,f46,f52,f56,f57,f93,f117,f130])).
+fof(f130,plain,(
+  spl4_3 | ~spl4_6),
+  inference(avatar_contradiction_clause,[],[f129])).
+fof(f129,plain,(
+  $false | (spl4_3 | ~spl4_6)),
+  inference(subsumption_resolution,[],[f123,f41])).
+fof(f41,plain,(
+  e != e3 | spl4_3),
+  inference(avatar_component_clause,[],[f39])).
+fof(f39,plain,(
+  spl4_3 <=> e = e3),
+  introduced(avatar_definition,[new_symbols(naming,[spl4_3])])).
+fof(f123,plain,(
+  e = e3 | ~spl4_6),
+  inference(superposition,[],[f12,f55])).
+fof(f55,plain,(
+  ( ! [X0] : (mult(e3,X0) = X0) ) | ~spl4_6),
+  inference(avatar_component_clause,[],[f54])).
+fof(f54,plain,(
+  spl4_6 <=> ! [X0] : mult(e3,X0) = X0),
+  introduced(avatar_definition,[new_symbols(naming,[spl4_6])])).
+fof(f12,plain,(
+  ( ! [X0] : (e = mult(X0,X0)) )),
+  inference(cnf_transformation,[],[f4])).
+fof(f4,axiom,(
+  ! [X0] : e = mult(X0,X0)),
+  file('/tmp/2Mx1AZsuS4/SOT_qdW831',unknown)).
+fof(f117,plain,(
+  spl4_2 | ~spl4_5),
+  inference(avatar_split_clause,[],[f102,f50,f35])).
+fof(f35,plain,(
+  spl4_2 <=> e = e2),
+  introduced(avatar_definition,[new_symbols(naming,[spl4_2])])).
+fof(f50,plain,(
+  spl4_5 <=> ! [X1] : mult(X1,e2) = X1),
+  introduced(avatar_definition,[new_symbols(naming,[spl4_5])])).
+fof(f102,plain,(
+  e = e2 | ~spl4_5),
+  inference(superposition,[],[f15,f51])).
+fof(f51,plain,(
+  ( ! [X1] : (mult(X1,e2) = X1) ) | ~spl4_5),
+  inference(avatar_component_clause,[],[f50])).
+fof(f15,plain,(
+  ( ! [X0] : (mult(e,X0) = X0) )),
+  inference(cnf_transformation,[],[f1])).
+fof(f1,axiom,(
+  ! [X0] : mult(e,X0) = X0),
+  file('/tmp/2Mx1AZsuS4/SOT_qdW831',unknown)).
+fof(f93,plain,(
+  ~spl4_1 | spl4_4),
+  inference(avatar_contradiction_clause,[],[f92])).
+fof(f92,plain,(
+  $false | (~spl4_1 | spl4_4)),
+  inference(subsumption_resolution,[],[f91,f45])).
+fof(f45,plain,(
+  sK0 != sF3 | spl4_4),
+  inference(avatar_component_clause,[],[f43])).
+fof(f43,plain,(
+  spl4_4 <=> sK0 = sF3),
+  introduced(avatar_definition,[new_symbols(naming,[spl4_4])])).
+fof(f91,plain,(
+  sK0 = sF3 | ~spl4_1),
+  inference(backward_demodulation,[],[f32,f71])).
+fof(f71,plain,(
+  ( ! [X0] : (mult(X0,e) = X0) )),
+  inference(superposition,[],[f65,f12])).
+fof(f65,plain,(
+  ( ! [X0,X1] : (mult(X0,mult(X0,X1)) = X1) )),
+  inference(forward_demodulation,[],[f58,f15])).
+fof(f58,plain,(
+  ( ! [X0,X1] : (mult(X0,mult(X0,X1)) = mult(e,X1)) )),
+  inference(superposition,[],[f14,f12])).
+fof(f14,plain,(
+  ( ! [X2,X0,X1] : (mult(mult(X0,X1),X2) = mult(X0,mult(X1,X2))) )),
+  inference(cnf_transformation,[],[f3])).
+fof(f3,axiom,(
+  ! [X0,X1,X2] : mult(mult(X0,X1),X2) = mult(X0,mult(X1,X2))),
+  file('/tmp/2Mx1AZsuS4/SOT_qdW831',unknown)).
+fof(f32,plain,(
+  mult(sK0,e) = sF3 | ~spl4_1),
+  inference(avatar_component_clause,[],[f30])).
+fof(f30,plain,(
+  spl4_1 <=> mult(sK0,e) = sF3),
+  introduced(avatar_definition,[new_symbols(naming,[spl4_1])])).
+fof(f57,plain,(
+  spl4_5 | ~spl4_4 | spl4_6),
+  inference(avatar_split_clause,[],[f48,f54,f43,f50])).
+fof(f48,plain,(
+  ( ! [X0,X1] : (mult(e3,X0) = X0 | sK0 != sF3 | mult(X1,e2) = X1) )),
+  inference(forward_demodulation,[],[f27,f20])).
+fof(f20,plain,(
+  ( ! [X0] : (mult(e3,X0) = sF1(X0)) )),
+  introduced(function_definition,[new_symbols(definition,[sF1])])).
+fof(f27,plain,(
+  ( ! [X0,X1] : (sK0 != sF3 | sF1(X0) = X0 | mult(X1,e2) = X1) )),
+  inference(forward_demodulation,[],[f23,f21])).
+fof(f21,plain,(
+  ( ! [X1] : (mult(X1,e2) = sF2(X1)) )),
+  introduced(function_definition,[new_symbols(definition,[sF2])])).
+fof(f23,plain,(
+  ( ! [X0,X1] : (sF2(X1) = X1 | sF1(X0) = X0 | sK0 != sF3) )),
+  inference(definition_folding,[],[f19,f22,f21,f20])).
+fof(f22,plain,(
+  mult(sK0,e) = sF3),
+  introduced(function_definition,[new_symbols(definition,[sF3])])).
+fof(f19,plain,(
+  ( ! [X0,X1] : (mult(e3,X0) = X0 | mult(X1,e2) = X1 | sK0 != mult(sK0,e)) )),
+  inference(cnf_transformation,[],[f11])).
+fof(f11,plain,(
+  (! [X0] : mult(e3,X0) = X0 & e != e3) | (! [X1] : mult(X1,e2) = X1 & e != e2) | sK0 != mult(sK0,e)),
+  inference(skolemisation,[status(esa),new_symbols(skolem,[sK0])],[f9,f10])).
+fof(f10,plain,(
+  ? [X2] : mult(X2,e) != X2 => sK0 != mult(sK0,e)),
+  introduced(choice_axiom,[])).
+fof(f9,plain,(
+  (! [X0] : mult(e3,X0) = X0 & e != e3) | (! [X1] : mult(X1,e2) = X1 & e != e2) | ? [X2] : mult(X2,e) != X2),
+  inference(rectify,[],[f8])).
+fof(f8,plain,(
+  (! [X1] : mult(e3,X1) = X1 & e != e3) | (! [X0] : mult(X0,e2) = X0 & e != e2) | ? [X2] : mult(X2,e) != X2),
+  inference(ennf_transformation,[],[f7])).
+fof(f7,plain,(
+  ~((! [X1] : mult(e3,X1) = X1 => e = e3) & ! [X2] : mult(X2,e) = X2 & (! [X0] : mult(X0,e2) = X0 => e = e2))),
+  inference(rectify,[],[f6])).
+fof(f6,negated_conjecture,(
+  ~((! [X0] : mult(X0,e2) = X0 => e = e2) & (! [X0] : mult(e3,X0) = X0 => e = e3) & ! [X0] : mult(X0,e) = X0)),
+  inference(negated_conjecture,[],[f5])).
+fof(f5,conjecture,(
+  (! [X0] : mult(X0,e2) = X0 => e = e2) & (! [X0] : mult(e3,X0) = X0 => e = e3) & ! [X0] : mult(X0,e) = X0),
+  file('/tmp/2Mx1AZsuS4/SOT_qdW831',unknown)).
+fof(f56,plain,(
+  ~spl4_2 | ~spl4_4 | spl4_6),
+  inference(avatar_split_clause,[],[f47,f54,f43,f35])).
+fof(f47,plain,(
+  ( ! [X0] : (e != e2 | mult(e3,X0) = X0 | sK0 != sF3) )),
+  inference(forward_demodulation,[],[f24,f20])).
+fof(f24,plain,(
+  ( ! [X0] : (sK0 != sF3 | e != e2 | sF1(X0) = X0) )),
+  inference(definition_folding,[],[f18,f22,f20])).
+fof(f18,plain,(
+  ( ! [X0] : (mult(e3,X0) = X0 | e != e2 | sK0 != mult(sK0,e)) )),
+  inference(cnf_transformation,[],[f11])).
+fof(f52,plain,(
+  spl4_5 | ~spl4_3 | ~spl4_4),
+  inference(avatar_split_clause,[],[f28,f43,f39,f50])).
+fof(f28,plain,(
+  ( ! [X1] : (e != e3 | sK0 != sF3 | mult(X1,e2) = X1) )),
+  inference(forward_demodulation,[],[f25,f21])).
+fof(f25,plain,(
+  ( ! [X1] : (e != e3 | sK0 != sF3 | sF2(X1) = X1) )),
+  inference(definition_folding,[],[f17,f22,f21])).
+fof(f17,plain,(
+  ( ! [X1] : (e != e3 | mult(X1,e2) = X1 | sK0 != mult(sK0,e)) )),
+  inference(cnf_transformation,[],[f11])).
+fof(f46,plain,(
+  ~spl4_2 | ~spl4_3 | ~spl4_4),
+  inference(avatar_split_clause,[],[f26,f43,f39,f35])).
+fof(f26,plain,(
+  sK0 != sF3 | e != e2 | e != e3),
+  inference(definition_folding,[],[f16,f22])).
+fof(f16,plain,(
+  e != e3 | e != e2 | sK0 != mult(sK0,e)),
+  inference(cnf_transformation,[],[f11])).
+fof(f33,plain,(
+  spl4_1),
+  inference(avatar_split_clause,[],[f22,f30])).
+% SZS output end Proof for SOT_qdW831
+% (2293031)------------------------------
+% (2293031)Version: Vampire 4.9 (Release build, commit c4b2bca23 on 2025-03-14 15:27:07 +0100)
+% (2293031)Linked with Z3 4.14.0.0 3c47fd96cf5645d0c42b2c819d9e9a84380aa721 z3-4.8.4-9178-g3c47fd96c
+% (2293031)Termination reason: Refutation
+
+% (2293031)Time elapsed: 0.005 s
+% (2293031)Peak memory usage: 12 MB
+% (2293031)------------------------------
+% (2293031)------------------------------
+% (2293026)Success in time 0.053 s
+% Vampire exiting
+
+% END OF SYSTEM OUTPUT
+% RESULT: SOT_qdW831 - Vampire---4.9 says Theorem - CPU = 0.02 WC = 0.09 
+% OUTPUT: SOT_qdW831 - Vampire---4.9 says Refutation - CPU = 0.02 WC = 0.09 
